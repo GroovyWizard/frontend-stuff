@@ -1,0 +1,162 @@
+<html>
+	<head> 
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+		<link href="./css/dfo.css" rel="stylesheet" type="text/css">
+	</head>
+	</head>
+	<body>
+		<div class="body-wrapper container mx-auto text-center">
+
+			<div class="agent-presenter">
+				<div class="row">
+					<div class="col-6">
+						<h1 class="agent-name"> Agent </h1>
+						<p class="agent-name"> A combat personnel of 'The Company' who specializes in guns and swords. </p>
+						<small> "There are no missions left unfinished." </small>
+						<p> A combatant who akslasaksklalslasjlasljasjsjlkasjlkskjaslkjasjlasjlksajkasjsajsalkasjl</p>
+					</div>
+
+					<div class="agent-image col-6">
+						<img src="images/Gunblader_Portrait.png"/>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="story-presenter">
+				<div class="row">
+					<div class="col">
+						<div class="mt-5 mb-5">
+							<h1 class="mb-5"> Character Story </h1>
+								<div class="container story-wrapper ">
+									<div class="row">
+										<div class="story-video-wrapper col-6">
+											<img class="story-video-picture img-fluid" src="https://img.youtube.com/vi/zpRbV7dimYo/maxresdefault.jpg" />
+										</div>
+
+										<div class="col-6 p-3">
+											<p>
+														The Empyrean Imperial Family is known to posssess a very secretive security group called 'The Company.'
+
+														The Company was mainly employed by the nobles, and sometimes carried out espionage. However, as the Imperial Family one day attempted to summon them, the nobles, fearful that their secrets would leak, framed The Company as ‘traitors’ and offered bounty for their capture. Falsely accused, ‘The Company’ managed to flee to the Lawless District.
+
+														Wandering about the Lawless District, The Company joined Enzo Sipo, the leader of the Gunmen, who seemed to share a common goal. However, as time passed Enzo Sipo started showing his true colors. Enzo Sipo started to recruit cruel, violent outlaws and even called in Rangelus, whom even the Wespeace Military had given up on.
+														The leader of ‘The Company’ O’Connell strived to persuade Enzo Sipo even after Varracht of the Sandstorm left, but betrayal was all he received in return. O’Connell no longer saw hope in the Empyrean, and decided to carry out an escape plan.
+
+														As O’Connell held strong confidence in the legend of the Underworld,
+														he decided to take The Company to the Underworld with a submersible hover craft from Dr. Giselle. Aboard the hover craft, O’Connell and ‘The Company’ traveled under the deep sea, arriving in Arad, a place only known as legend among the Empyrean. ‘The Company’ settled in Arad as mercenaries.
+														Then one day, The Company seizes an opportunity to suppress a large insurgency during the change of the principality.
+
+														The Company fought in the war, building a reputation as mercenaries from Arad, but lost O’Connell during a mission. Moving past grief, ‘The Company’ appoints Rupert, who had been long discussed as his successor. Under the leadership of Rupert, ‘The Company’ entered its second renaissance in Arad. Until one day, rumors that O’Connell is still alive reaches the intelligence of ‘The Company,’
+
+														If he is in fact alive, why has he not returned?
+
+														To find out the truth, ‘The Company’ dispatches their men.
+											</p>
+										</div>
+
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="advancement-presenter">
+				<h1>
+							Advancement
+						</h1>
+							<div class="btn-group">
+								<button type="button" class="btn btn-primary" onclick="changeTabOnClick('tab1')">
+									Secret Agent
+								</button>
+
+								<button type="button" class="btn btn-primary" onclick="changeTabOnClick('tab2')">
+									Troubleshooter
+								</button>
+
+								<button type="button" class="btn btn-primary" onclick="changeTabOnClick('tab3')">
+									Hitman
+								</button>
+
+								<button type="button" class="btn btn-primary" onclick="changeTabOnClick('tab4')">
+									Specialist
+								</button>
+
+							</div>
+
+							<div class="">
+								<div style="display: block" class="" id="tab1">
+										<div class="row">
+											<div class="col-6 secret-agent-presenter">
+												<p> Secret Agent </p>
+												<p> A secret agent specializing in bayonet-fighting techniques. </p>
+											</div>
+
+											<div class="col-6 p-3">
+												<img class="img-fluid" src="https://static.dfoneople.com/publish/bbs_data_neople/images/charac_info/f64c26623d/7/2/0/agent_01_neo.jpg" />
+											</div>
+										</div>
+								</div>
+
+								<div style="display: none" class="" id="tab2">
+									Troubleshooter
+								</div>
+								<div style="display: none" class="" id="tab3">
+									Hitman
+								</div>
+								<div style="display: none" class="" id="tab4">
+									Specialist
+								</div>
+							</div>
+			</div>
+
+		</div>
+	</body>
+	<script>
+		function checkIfElementExists(elementArray) {
+			for (const id of elementArray) {
+				if(id == null || id == undefined) { 
+					return false;
+				}
+			}
+			return true;
+		}
+
+		function changeTabOnClick(tab) {
+				const tab1 = document.getElementById("tab1");
+				const tab2 = document.getElementById("tab2");
+				const tab3 = document.getElementById("tab3");
+				const tab4 = document.getElementById("tab4");
+					switch(tab) {
+						case "tab1":
+							tab1.style.display = "block";
+							tab2.style.display = "none";
+							tab3.style.display = "none";
+							tab4.style.display = "none";
+							break;
+						case "tab2":
+							tab2.style.display = "block";
+							tab1.style.display = "none";
+							tab3.style.display = "none";
+							tab4.style.display = "none";
+							break;
+						case "tab3":
+							tab3.style.display = "block";
+							tab4.style.display = "none";
+							tab2.style.display = "none";
+							tab1.style.display = "none";
+							break;
+						case "tab4":
+							tab4.style.display = "block";
+							tab3.style.display = "none";
+							tab2.style.display = "none";
+							tab1.style.display = "none";
+							break;
+					}
+		}
+				
+	</script>
+</html>

@@ -1,0 +1,39 @@
+	body {
+		background-color: #26262E;
+		color: #BDBDBE;
+	}
+
+	.story-video-picture {
+		position: sticky;
+		top: 0;
+	}
+
+	.story-wrapper {
+		background-color: black;
+		overflow: auto;
+		width: 100%;
+		height: 300px;
+	}
+
+	.agent-presenter {
+		background-color: black;
+	}
+
+	.agent-name {
+		color: white;
+	}
+
+	.agent-image {
+			width: 500px; 
+      height: 300px; 
+      overflow: hidden; 
+	}
+
+	.agent-image img {
+		  width: 500px; /* A imagem ocupa toda a largura da div */
+      height: 400px; /* A altura é ajustada automaticamente para manter a proporção original */
+      display: block; 
+	}
+
+
+
