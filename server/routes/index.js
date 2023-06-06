@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/dungeon-fighter-agent', function(req, res, next) {
-	res.sendFile(path.join(__dirname + '/../../static/dfo-agent.html'));
+		res.sendFile(path.join(__dirname + '/../../dfo-agent/dfo-agent.html'));
 });
 
 module.exports = router;

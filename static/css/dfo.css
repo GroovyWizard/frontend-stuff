@@ -24,15 +24,25 @@
 	}
 
 	.agent-image {
-			width: 500px; 
+	  width: 500px; 
       height: 300px; 
       overflow: hidden; 
 	}
 
 	.agent-image img {
-		  width: 500px; /* A imagem ocupa toda a largura da div */
+	  width: 500px; /* A imagem ocupa toda a largura da div */
       height: 400px; /* A altura é ajustada automaticamente para manter a proporção original */
       display: block; 
+	}
+
+	.advancement-content {
+		background-color: black;
+
+	}
+
+	.advancement-name {
+		font-weight: normal !important;
+		color: white;
 	}
 
 
